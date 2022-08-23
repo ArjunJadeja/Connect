@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- App Info -->
+    <string name="app_name">Connect</string>
+    <string name="app_version">Version 1.0.0</string>
+
+    <!-- App Menu Items -->
+    <string name="add_user">Add User</string>
+    <string name="profile">Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="app_info">App Info</string>
+    <string name="exit">Exit</string>
+
+    <!-- App Buttons -->
+    <string name="edit">Edit</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+    <string name="change">Change</string>
+    <string name="add_users">Add Users!</string>
+
+    <!-- App Dialogs -->
+    <string name="loading_data">Loading…</string>
+    <string name="item_not_added">Not Added</string>
+    <string name="profile_info">Profile Info</string>
+    <string name="socials_info">Socials Info</string>
+    <string name="nothing_to_show">Nothing to show…</string>
+    <string name="check_inputs">check inputs correctly before saving</string>
+
+    <!-- No Internet Connection -->
+    <string name="no_internet_connection">No internet connection</string>
+
+    <!-- User Status -->
+    <string name="status">Status</string>
+    <string name="your_status">Your Status</string>
+    <string name="update_status">Update Status</string>
+    <string name="enter_new_status">enter new status…</string>
+
+    <!-- User Profile -->
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="whatsapp_number">Whatsapp Number</string>
+    <string name="twitter_username">Twitter Username</string>
+    <string name="instagram_username">Instagram Username</string>
+    <string name="linkedin_profile_username">LinkedIn Profile Username</string>
+
+</resources>

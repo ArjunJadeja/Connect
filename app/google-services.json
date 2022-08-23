@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "348752508363",
+    "project_id": "connect-by-arjun",
+    "storage_bucket": "connect-by-arjun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348752508363:android:5e771abe033cbf6434b24e",
+        "android_client_info": {
+          "package_name": "com.arjun.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348752508363-95v1od9trj9bcs5ibonj6aa6j3f0dvb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtTmnzeix2c_f2cjn2ZEFvyiw1FSo1TB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348752508363-95v1od9trj9bcs5ibonj6aa6j3f0dvb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

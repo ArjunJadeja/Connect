@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ProfileFragment">
+
+    <!-- Top App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/app_name" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Profile Info Dialog -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/profileInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_info"
+        android:textColor="@color/white_variant"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar" />
+
+    <ScrollView
+        android:id="@+id/profileInfoScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/editProfileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileInfoTextView">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_smaller"
+            android:orientation="vertical">
+
+            <!-- User Profile Image -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileImage"
+                android:layout_width="@dimen/bigger_image_dimen"
+                android:layout_height="@dimen/bigger_image_dimen"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@id/profileInfoScrollView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topAppBar"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded" />
+
+            <!-- User Profile Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_bigger"
+                android:focusable="false"
+                android:hint="@string/name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/loading_data" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- User Profile username -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/usernameInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:focusable="false"
+                android:hint="@string/username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/usernameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/loading_data" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- User Profile Status -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/StatusInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:focusable="false"
+                android:hint="@string/status">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/statusText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/loading_data" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- User profile LinkedIn Profile username -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/linkedInUsernameInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:focusable="false"
+                android:hint="@string/linkedin_profile_username"
+                app:startIconDrawable="@drawable/ic_linkedin">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/linkedInUsernameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/item_not_added" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- User profile LinkedIn Twitter username -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/twitterUsernameInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:focusable="false"
+                android:hint="@string/twitter_username"
+                app:startIconDrawable="@drawable/ic_twitter">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/twitterUsernameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/item_not_added" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- User profile Instagram Profile username -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/instagramUsernameInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/instagram_username"
+                app:startIconDrawable="@drawable/ic_instagram">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/instagramUsernameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/item_not_added" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- User profile Whatsapp number -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/whatsappNumberInput"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:hint="@string/whatsapp_number"
+                app:startIconDrawable="@drawable/ic_whatsapp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/whatsappNumberText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="@string/item_not_added" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <!-- Edit Users Profile Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/editProfileButton"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="@string/edit"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="@dimen/stroke_width" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

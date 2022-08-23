@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text size -->
+    <dimen name="text_small">18sp</dimen>
+    <dimen name="text_medium">22sp</dimen>
+
+    <!-- Line spacing -->
+    <dimen name="line_spacing">5dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_little">4dp</dimen>
+    <dimen name="margin_smaller">8dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_big">24dp</dimen>
+    <dimen name="margin_bigger">32dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_bigger">16dp</dimen>
+
+    <!-- Corner radius -->
+    <dimen name="card_corner">8dp</dimen>
+
+    <!-- Stroke Width -->
+    <dimen name="stroke_width">1dp</dimen>
+
+    <!-- Image dimensions -->
+    <dimen name="smaller_image_dimen">96dp</dimen>
+    <dimen name="bigger_image_dimen">120dp</dimen>
+
+</resources>

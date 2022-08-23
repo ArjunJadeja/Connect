@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeFragment">
+
+    <!-- Top App Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:menu="@menu/home_menu"
+            app:title="@string/app_name" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- No Internet Banner -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/noInternetTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_variant"
+        android:gravity="center"
+        android:padding="@dimen/padding_small"
+        android:text="@string/no_internet_connection"
+        android:textColor="@color/white_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar" />
+
+    <!-- Your Status Dialog -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/yourStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_little"
+        android:text="@string/your_status"
+        android:textColor="@color/white_variant"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noInternetTextView" />
+
+    <!-- Users Status CardView -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/myStatusCardView"
+        style="@style/Widget.Material3.CardView.Elevated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        app:cardCornerRadius="@dimen/card_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yourStatusTextView">
+
+        <!-- User Status TextView -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/myStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:padding="@dimen/padding_medium"
+            android:textAlignment="center"
+            android:textColor="@color/white_variant"
+            android:textSize="@dimen/text_medium"
+            tools:text="Available" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Change User Status Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/changeStatusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:backgroundTint="@color/black"
+        android:text="@string/change"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myStatusCardView"
+        app:strokeColor="@color/blue"
+        app:strokeWidth="@dimen/stroke_width" />
+
+    <!-- Divider Line -->
+    <View
+        android:id="@+id/dividerLineView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stroke_width"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/white_variant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/changeStatusButton" />
+
+    <!-- Added Users List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addedUsersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_little"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/padding_medium"
+        android:paddingBottom="@dimen/padding_medium"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dividerLineView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/user_profile_card" />
+
+    <!-- Empty Added Users List Layout -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/emptyListLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dividerLineView">
+
+        <!-- Nothing To Show Illustration -->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/nothingToShowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_nothing_to_show" />
+
+        <!-- Nothing To Show TextView -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nothingToShowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_big"
+            android:text="@string/nothing_to_show"
+            android:textColor="@color/white_variant"
+            android:textSize="@dimen/text_small" />
+
+        <!-- Add Users Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addUsersButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_small"
+            android:backgroundTint="@color/blue"
+            android:text="@string/add_users"
+            android:textColor="@color/black" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

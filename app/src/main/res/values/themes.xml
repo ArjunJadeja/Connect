@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Main application theme -->
+    <style name="Theme.Connect" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white_variant</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/black_variant</item>
+        <item name="colorOnSecondary">@color/white_variant</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <!-- Splash theme -->
+    <style name="SplashScreenTheme" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Background color. -->
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
+    <!-- SignIn theme -->
+    <style name="Theme.Sign.In" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white_variant</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black_variant</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Background color. -->
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+</resources>
