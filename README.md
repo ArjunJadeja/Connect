@@ -4,6 +4,18 @@
 Connect is an android app which helps you to connect with people according to their realtime state.
 </p>
 
+## Preview
+
+<p float="left">
+  <img src="assets/1.jpg" width="200" /> 
+  <img src="assets/2.jpg" width="200" />
+  <img src="assets/3.jpg" width="200" />
+  <img src="assets/4.jpg" width="200" /> 
+  <img src="assets/5.jpg" width="200" /> 
+  <img src="assets/6.jpg" width="200" />
+  <img src="assets/7.jpg" width="200" />
+</p>
+
 ## Tech stack & Open-source libraries
 
 - Minimum SDK level 21
