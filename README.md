@@ -16,8 +16,10 @@ Connect is an android app which helps you to connect with people according to th
   <img src="assets/7.jpg" width="200" />
 </p>
 
-## Tech stack & Open-source libraries
+## Download
+Go to the [Releases](https://github.com/ArjunJadeja/Connect/releases) to download the latest APK.
 
+## Tech stack & Open-source libraries
 - Minimum SDK level 21
 - [Kotlin](https://kotlinlang.org/) - Modern, concise and safe programming language
 - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) - A concurrency design pattern to execute code asynchronously.
@@ -31,12 +33,29 @@ Connect is an android app which helps you to connect with people according to th
   - MVVM Architecture (View - ViewModel - Network)
 - [Firebase](https://github.com/firebase/quickstart-android) - Application development platform that helps you build, improve, and grow your app.
 - [Glide](https://github.com/bumptech/glide) - An image loading and caching library for Android.
-
-## Download
-Go to the [Releases](https://github.com/ArjunJadeja/Connect/releases) to download the latest APK.
+- [Material-Components](https://github.com/material-components/material-components-android) - Material design components for building View layouts and Animations.
 
 ## MAD Score
 ![summary](https://user-images.githubusercontent.com/81246797/186257198-7a249533-7c37-4aa1-8dbd-c8c408c6e656.png)
 
-## License
-[Apache](https://www.apache.org/licenses/LICENSE-2.0)
+## Credits
+![Empty List Illustration](https://iconscout.com/illustration/boy-waiting-with-cat-2637397) by [IconScout Store](https://iconscout.com/contributors/iconscout)
+
+![Search Illustration](https://iconscout.com/illustration/searching-2637403) by [IconScout Store](https://iconscout.com/contributors/iconscout)
+
+# License
+```xml
+Designed and developed by 2022 Arjun Jadeja
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
