@@ -22,6 +22,7 @@ Go to the [Releases](https://github.com/ArjunJadeja/Connect/releases) to downloa
 ## Tech stack & Open-source libraries
 - Minimum SDK level 21
 - [Kotlin](https://kotlinlang.org/) - Modern, concise and safe programming language
+- [Flow](https://developer.android.com/kotlin/flow) - A flow is a stream of data that can be computed asynchronously.
 - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) - A concurrency design pattern to execute code asynchronously.
 - Jetpack
   - Lifecycle - Observe Android lifecycles and handle UI states upon the lifecycle changes.
