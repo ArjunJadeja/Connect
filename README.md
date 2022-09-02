@@ -17,7 +17,9 @@ Connect is an android app which helps you to connect with people according to th
 </p>
 
 ## Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Faj8BKEis_I?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=Faj8BKEis_I"><img src="https://img.youtube.com/vi/Faj8BKEis_I/0.jpg" alt="IMAGE ALT TEXT"></a>
+</div>
 
 ## Download
 Go to the [Releases](https://github.com/ArjunJadeja/Connect/releases) to download the latest APK.
