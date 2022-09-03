@@ -1,7 +1,7 @@
 <h1 align="center">Connect</h1>
 
 <p align="center">  
-Connect is an android app which helps you to connect with people according to their realtime state.
+🔗Connect is an android app which helps you to connect with people according to their realtime state.
 </p>
 
 ## Preview
@@ -17,16 +17,14 @@ Connect is an android app which helps you to connect with people according to th
 </p>
 
 ## Demo
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=Faj8BKEis_I"><img src="https://img.youtube.com/vi/Faj8BKEis_I/0.jpg" alt="IMAGE ALT TEXT"></a>
-</div>
+Watch [App Demo](https://www.youtube.com/watch?v=Faj8BKEis_I) on YouTube.
 
 ## Download
 Go to the [Releases](https://github.com/ArjunJadeja/Connect/releases) to download the latest APK.
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 21
-- [Kotlin](https://kotlinlang.org/) - Modern, concise and safe programming language
+- [Kotlin](https://kotlinlang.org/) - Modern, concise and safe programming language.
 - [Flow](https://developer.android.com/kotlin/flow) - A flow is a stream of data that can be computed asynchronously.
 - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) - A concurrency design pattern to execute code asynchronously.
 - Jetpack
@@ -41,13 +39,19 @@ Go to the [Releases](https://github.com/ArjunJadeja/Connect/releases) to downloa
 - [Glide](https://github.com/bumptech/glide) - An image loading and caching library for Android.
 - [Material-Components](https://github.com/material-components/material-components-android) - Material design components for building View layouts and Animations.
 
+## Architecture
+**Connect** is based on the MVVM architecture and the Repository pattern.
+<p float="left">
+  <img src="assets/ConnectArchitecture.png" width="600"/> 
+</p>
+
 ## MAD Score
 ![summary](https://user-images.githubusercontent.com/81246797/186257198-7a249533-7c37-4aa1-8dbd-c8c408c6e656.png)
 
 ## Credits
-![Empty List Illustration](https://iconscout.com/illustration/boy-waiting-with-cat-2637397) by [IconScout Store](https://iconscout.com/contributors/iconscout)
+[Add Users Illustration](https://iconscout.com/illustration/boy-waiting-with-cat-2637397) by [IconScout Store](https://iconscout.com/contributors/iconscout).
 
-![Search Illustration](https://iconscout.com/illustration/searching-2637403) by [IconScout Store](https://iconscout.com/contributors/iconscout)
+[Search Users Illustration](https://iconscout.com/illustration/searching-2637403) by [IconScout Store](https://iconscout.com/contributors/iconscout).
 
 # License
 ```xml
